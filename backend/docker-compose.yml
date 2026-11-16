@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000"
+    env_file:
+      - .env
+    volumes:
+      - traffic_api_data:/app/instance
+      - traffic_api_uploads:/app/static/uploads
+    restart: unless-stopped
+
+volumes:
+  traffic_api_data:
+  traffic_api_uploads:

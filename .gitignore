@@ -1,0 +1,39 @@
+# Secrets and per-machine configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/venv/
+**/instance/
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+**/.pytest_cache/
+
+# Next.js / Node.js
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/*.tsbuildinfo
+**/.vercel/
+
+# Local uploads, user information, exported requests
+**/static/uploads/
+**/uploads/
+**/Insomnia*.yaml
+**/*secret*.json
+
+# Build output and editor files
+**/bin/
+**/.DS_Store
+**/.idea/
+**/.vscode/
+**/*.log
